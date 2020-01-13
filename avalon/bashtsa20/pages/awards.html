@@ -1,185 +1,251 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>BASH TSA</title>
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700|Poppins:400,700" rel="stylesheet">
-        <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<!-- Latest compiled and minified JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/master.css">
-        <!-- For Mobile Users -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body style="background-image:url('../images/bg-awards.png'); background-repeat: repeat; background-size:444px 212px;">
-        <nav class="header navbar navbar-expand-lg navbar-dark sticky-top">
-            <a class="navbar-brand" href="../index.html">
-              <div class="row">
-                <div class="col nopadding">
-                    <img src="../images/logoColor.png" class="d-inline-block verticalCenter" alt="" style="height:2.5rem;">
-                </div>
-                <div class="col nopadding">
-                    <p>Boyertown Area Senior High School</p>
-                    <small>Technology Student Association</small>
-                </div>
-              </div>
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="chapter.html">Chapter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="education.html">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="activities.html">Activities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">Awards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../tommegun/index.html">Design Brief</a>
-              </li>
-            </ul>
+  <head>
+    <meta charset="utf-8" />
+    <title>BASH TSA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,700|Poppins:400,700"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/master.css" />
+    <!-- For Mobile Users -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body
+    style="background-image:url('../images/bg-awards.png'); background-repeat: repeat; background-size:444px 212px;"
+  >
+    <nav class="header navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="../index.html">
+        <div class="row">
+          <div class="col nopadding">
+            <img
+              src="../images/logoColor.png"
+              class="d-inline-block verticalCenter"
+              alt=""
+              style="height:2.5rem;"
+            />
           </div>
-        </nav>
-        <section style="background-color:white;">
+          <div class="col nopadding">
+            <p>Boyertown Area Senior High School</p>
+            <small>Technology Student Association</small>
+          </div>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        style="justify-content: flex-end;"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chapter.html">Chapter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index-2.html">Design Brief</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section style="background-color:white;">
+      <div class="row rowSection">
+        <div class="row">
+          <h1>Awards</h1>
+          <br />
+          <hr style="margin-bottom:0.5rem;" />
+          <small style="margin-bottom:4rem;"
+            >Explore Boyertown TSA's lineup of awards and achievements over the
+            past few years at every level of competition</small
+          >
+        </div>
+        <div class="row">
           <div class="row rowSection">
-            <div class="row">
-              <h1>Awards</h1><br>
-              <hr style="margin-bottom:0.5rem;">
-              <small style="margin-bottom:4rem;">Explore Boyertown TSA's lineup of awards and achievements over the past few years at every level of competition</small>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 bodysection">
+              <h2>Inspiration Award - States</h2>
+              <p>
+                BASH-TSA won the Pennsylvania State Inspiration Award in both
+                2017 and 2019 for having the most positive community involvement
+                of any chapter in the state of Pennsylvania.
+              </p>
             </div>
-            <div class="row">
-              <div class="row rowSection">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7 bodysection">
-                    <h2>Inspiration Award - States</h2>
-                    <p>
-                      BASH-TSA won the Pennsylvania State Inspiration Award in both 2017 and 2019 for having the most positive community involvement of any chapter in the state of Pennsylvania.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <center>
-                        <img class="teacherpic" src="../images/award-inspiration_regionals.png">
-                    </center>
-                </div>
-              </div>
-              <div class="row rowSection">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7 bodysection">
-                    <h2>Purple Award</h2>
-                    <p>
-                      The Technology Student Association's National Service Project partner is the American Cancer Society; one of TSA's primary goals is to raise money for ACS efforts and research. BASH-TSA won the Purple Award at the national conference the past three years in a row for raising over $2,000 each year for the American Cancer Society to forward cancer research.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <center>
-                        <img class="teacherpic" src="../images/award-purple.png">
-                    </center>
-                </div>
-              </div>
-              <div class="row rowSection">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7 bodysection">
-                    <h2>Inspiration Award - Regionals</h2>
-                    <p>
-                      BASH-TSA won the Pennsylvania Region 9 Inspiration Award in 2017 and 2019 for its outstanding involvement in the school community, regional conference planning, and chapter fundraising.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <center>
-                        <img class="teacherpic" src="../images/award-inspiration_states.png">
-                    </center>
-                </div>
-              </div>
-              <div class="row rowSection">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7 bodysection">
-                    <h2>Regional Conference</h2>
-                    <p>
-                      At the regional level, BASH-TSA semi-finalized in 70 events and took top 3's in 42 events. This represented the highest achievement level of any chapter present.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <center>
-                        <img class="teacherpic" src="../images/award-regionals.png">
-                    </center>
-                </div>
-              </div>
-              <div class="row rowSection">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7 bodysection">
-                    <h2>State Conference</h2>
-                    <p>
-                      At the state level, BASH-TSA semi-finalized in 35 events and took top 3's in 15 events.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <center>
-                        <img class="teacherpic" src="../images/award-states.png">
-                    </center>
-                </div>
-              </div>
-              <div class="row rowSection">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7 bodysection">
-                    <h2>Nationals Conference</h2>
-                    <p>
-                      At the 2018 National Conference, BASH-TSA were finalists in many events including 6th place in Chapter Team, 4th in Scientific Visualization, and 5th in Software Development.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <center>
-                        <img class="teacherpic" src="../images/award-nationals.png">
-                    </center>
-                </div>
-              </div>
-                
+            <div class="col-sm-4">
+              <center>
+                <img
+                  class="teacherpic"
+                  src="../images/award-inspiration_regionals.png"
+                />
+              </center>
             </div>
           </div>
+          <div class="row rowSection">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 bodysection">
+              <h2>Purple Award</h2>
+              <p>
+                The Technology Student Association's National Service Project
+                partner is the American Cancer Society; one of TSA's primary
+                goals is to raise money for ACS efforts and research. BASH-TSA
+                won the Purple Award at the national conference the past three
+                years in a row for raising over $2,000 each year for the
+                American Cancer Society to forward cancer research.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <center>
+                <img class="teacherpic" src="../images/award-purple.png" />
+              </center>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 bodysection">
+              <h2>Inspiration Award - Regionals</h2>
+              <p>
+                BASH-TSA won the Pennsylvania Region 9 Inspiration Award in 2017
+                and 2019 for its outstanding involvement in the school
+                community, regional conference planning, and chapter
+                fundraising.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <center>
+                <img
+                  class="teacherpic"
+                  src="../images/award-inspiration_states.png"
+                />
+              </center>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 bodysection">
+              <h2>Regional Conference</h2>
+              <p>
+                At the regional level, BASH-TSA semi-finalized in 70 events and
+                took top 3's in 42 events. This represented the highest
+                achievement level of any chapter present.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <center>
+                <img class="teacherpic" src="../images/award-regionals.png" />
+              </center>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 bodysection">
+              <h2>State Conference</h2>
+              <p>
+                At the state level, BASH-TSA semi-finalized in 35 events and
+                took top 3's in 15 events.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <center>
+                <img class="teacherpic" src="../images/award-states.png" />
+              </center>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 bodysection">
+              <h2>Nationals Conference</h2>
+              <p>
+                At the 2018 National Conference, BASH-TSA were finalists in many
+                events including 6th place in Chapter Team, 4th in Scientific
+                Visualization, and 5th in Software Development.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <center>
+                <img class="teacherpic" src="../images/award-nationals.png" />
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <!-- Bottom of Page Navigation -->
-          <nav style="padding-bottom:1rem;">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="activities.html" tabindex="-1">&laquo; Activities</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#top">Back to Top</a></li>
-              <li class="page-item">
-                <a class="page-link" href="about.html">About &raquo;</a>
-              </li>
-            </ul>
-          </nav>
+      <!-- Bottom of Page Navigation -->
+      <nav style="padding-bottom:1rem;">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="activities.html" tabindex="-1"
+              >&laquo; Activities</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#top">Back to Top</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="about.html">About &raquo;</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
-        </section>
-            
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
-        </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
     <footer>
-        <div class="notwide">
-            <center>
-            <p>
-                Made by Team T1285 &emsp; 2018-2019
-            </p>
-            </center>
-        </div>
-    </footer> 
-    </body>
+      <div class="notwide">
+        <center>
+          <p>
+            Made by Team T1285 &emsp; 2018-2019
+          </p>
+        </center>
+      </div>
+    </footer>
+  </body>
 </html>

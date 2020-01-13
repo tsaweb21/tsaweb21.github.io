@@ -1,205 +1,324 @@
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>BASH TSA</title>
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700|Poppins:400,700" rel="stylesheet">
-        <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<!-- Latest compiled and minified JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/master.css">
-        <!-- For Mobile Users -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body style="background-image:url('../images/bg-people.png'); background-repeat: repeat; background-size:444px 212px;">
-        <nav class="header navbar navbar-expand-lg navbar-dark sticky-top">
-            <a class="navbar-brand" href="../index.html">
-              <div class="row">
-                <div class="col nopadding">
-                    <img src="../images/logoColor.png" class="d-inline-block verticalCenter" alt="" style="height:2.5rem;">
-                </div>
-                <div class="col nopadding">
-                    <p>Boyertown Area Senior High School</p>
-                    <small>Technology Student Association</small>
-                </div>
-              </div>
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="chapter.html">Chapter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="education.html">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">Activities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="awards.html">Awards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../tommegun/index.html">Design Brief</a>
-              </li>
-            </ul>
+  <head>
+    <meta charset="utf-8" />
+    <title>BASH TSA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,700|Poppins:400,700"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/master.css" />
+    <!-- For Mobile Users -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body
+    style="background-image:url('../images/bg-people.png'); background-repeat: repeat; background-size:444px 212px;"
+  >
+    <nav class="header navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="../index.html">
+        <div class="row">
+          <div class="col nopadding">
+            <img
+              src="../images/logoColor.png"
+              class="d-inline-block verticalCenter"
+              alt=""
+              style="height:2.5rem;"
+            />
           </div>
-        </nav>
-        <section style="background-color:white;">
-          <div class="row rowSection">
-            <div class="row">
-              <h1>Activities</h1><br>
-              <hr style="margin-bottom:0.5rem;">
-              <small style="margin-bottom:4rem;">Disover Boyertown TSA's prestigious and record-breaking lineup of fundraisers and community activities</small>
-            </div>
-            <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-12">
-                  <h2>Spaghetti Dinner</h2>
-                  <p>
-                    On December 12, 2018, BASH-TSA hosted their annual spaghetti dinner. The dinner was open to friends, families, teachers, and community members alike. The annual event consists of spaghetti, alad, rolls, drinks, and most importantly, all-you-can-eat dessert - all prepared by chapter members. Students benefit not only from the experience, but funds from tickets sold by students directly alleviates the cost of states. Tickets can also be bought at the door, but students benefit more from presales. Like previous years, the 2018 spaghetti dinner was a huge success. Guests enjoyed the food and the fact they were helping students pursue their love of TSA. 
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-1">
-                  <div class="imgbox">
-                      <img src="../images/activity-spaghetti.jpeg" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-            <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-1">
-                  <h2>Adopt-A-Child</h2>
-                  <p>
-                  This past December, chapter members hosted their first Adopt-A-Child. The chapter was given a list of less fortunate children from the community and what they wanted for the holidays. Each grade was split up, and made it into a friendly competition to see who could raise the most items for as many children as possible. This added energy and excitement to the event, as well as motivating everyone to participate and donate materials during the holiday season. Overall, hundreds of dollars were raised for this event - just from inside of the chapter. Adopt-A-Child was a huge success (the freshmen won) and the members look forward to doing it for years to come. Not only did it put everyone in the holiday spirit, it also helped to make Christmas better for some children.  
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-12">
-                  <div class="imgbox">
-                      <img src="../images/activity-adopt.jpg" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-            <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-12">
-                  <h2>Bag Bingo</h2>
-                  <p>
-                   In the Spring of 2019, BASH TSA hosted their third annual designer bag bingo event at the NORCO Fire Company. Tickets were sold ahead of of the event and were gone within weeks following the success of the previous years’ bag bingos. Students helped at the event by setting up, serving food, help run the event, and cleaning up. The profits were split between all students who volunteered to help fund their trip to the state conference. 
-                  </p>
-            		  <p>
-            		   Other items were donated by local vendors, who were able to sell their products during the bingo, giving guests more things to do and a better experience. There was also a 50/50 raffle hosted which generated a lot of participation. Overall, the chapter made a total of $4,500. The popularity of the event year after year exemplifies the community’s support to further students’ educational career and opportunities, as well as chapter pride. 
-            		  </p>
-              </div>
-              <div class="col-sm-6 order-sm-1">
-                  <div class="imgbox">
-                      <img src="../images/activity-bingo.jpg" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-            <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-1">
-                  <h2>Painting With a Twist</h2>
-                  <p>
-                     BASH TSA hosted a social event at Painting With a Twist in November 2018. Members had a good time enjoying snacks and expressing their creativity. They painted snowmen with individual touches and got the opportunity to try and paint each other. This was a good experience for students to work together outside of the typical classroom, as well as socialize outside of normal groups and meet new people in the chapter. The event was successful in developing lasting connections between chapter members. 
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-12">
-                  <div class="imgbox">
-                      <img src="../images/activity-pwat.jpg" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-            <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-12">
-                  <h2>Pink-Out T-Shirts</h2>
-                  <p>
-                      This past October, BASH-TSA sold pink t-shirts during Homecoming week to boost school spirit, promote breast cancer awareness, and raise a donation for the American Cancer Society. The shirts were sold for $10 the entire week leading up to the Homecoming football game. A total of $4,712 was made and all of the proceeds were donated to the American Cancer Society. At the football game, the stadium was a sea of pink shirts full of excitement and school spirit. This event was a huge success in not only uniting the school, but raising money for a good cause.
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-1">
-                  <div class="imgbox">
-                      <img src="../images/pink.JPG" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-  	    <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-1">
-                  <h2>BASH TSA 5k: Back To The 80's</h2>
-                  <p>
-                      The first ever BASH-TSA 5k was held on Sunday, March 24th at Boyertown High School. Over 70 participants raced in either the 5k or the 1 mile walk. Chapter members either ran in the race, or volunteered. Runners were entered for door prizes, and recieved medals based on their placement and participation. The event was organized by the BASH TSA Officer Team, with treasurer Chris Angus at the helm. The event helped fundraise over $6,000 for the chapter’s yearly ACS contribution. 
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-12">
-                  <div class="imgbox">
-                      <img src="../images/activity-race.JPG" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-	    <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-12">
-                  <h2>Relay for Life</h2>
-                  <p>
-                      BASH-TSA attended their second Relay for Life this year. The chapter attended the Moravian College Relay for Life in 2017, and attended the Millersville Relay for Life this past February. 16 members attended the event, which ran from 6 pm to 6 am. The chapter created Relay accounts, and received contributions from family and friends. At the Millersville Relay for Life, chapter members participated in a variety of events, including putting their team members in “jail”, games, and different competitions. Overall, the chapter raised to $470, and had a great time at the event.
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-1">
-                  <div class="imgbox">
-                      <img src="../images/activity-relay.jpg" alt class="boximg">
-                  </div>
-              </div>
-            </div>
-            <div class="row activityRow">
-              <div class="col-sm-6 bodysection order-sm-1">
-                  <h2>Clothing Drive</h2>
-                  <p>
-                      BASH-TSA ran their fourth annual clothing drive, collecting donated clothes, stuffed animals, and blankets from the school and from the community. Over three thousand pounds of clothing were collected in total, amounting to more than $2,000 worth of items. It also achieved a huge number of participators, including students, families, and community members. Two trucks were filled with bags of clothing and then donated to those in need. This drive is a great way to get people involved in a good cause and to show what our club is capable of with teamwork and dedication. 
-                  </p>
-              </div>
-              <div class="col-sm-6 order-sm-12">
-                  <div class="imgbox">
-                      <img src="../images/activity-clothing.jpg" alt class="boximg">
-                  </div>
-              </div>
+          <div class="col nopadding">
+            <p>Boyertown Area Senior High School</p>
+            <small>Technology Student Association</small>
+          </div>
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        style="justify-content: flex-end;"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chapter.html">Chapter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="awards.html">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index-2.html">Design Brief</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section style="background-color:white;">
+      <div class="row rowSection">
+        <div class="row">
+          <h1>Activities</h1>
+          <br />
+          <hr style="margin-bottom:0.5rem;" />
+          <small style="margin-bottom:4rem;"
+            >Disover Boyertown TSA's prestigious and record-breaking lineup of
+            fundraisers and community activities</small
+          >
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-12">
+            <h2>Spaghetti Dinner</h2>
+            <p>
+              On December 12, 2018, BASH-TSA hosted their annual spaghetti
+              dinner. The dinner was open to friends, families, teachers, and
+              community members alike. The annual event consists of spaghetti,
+              alad, rolls, drinks, and most importantly, all-you-can-eat dessert
+              - all prepared by chapter members. Students benefit not only from
+              the experience, but funds from tickets sold by students directly
+              alleviates the cost of states. Tickets can also be bought at the
+              door, but students benefit more from presales. Like previous
+              years, the 2018 spaghetti dinner was a huge success. Guests
+              enjoyed the food and the fact they were helping students pursue
+              their love of TSA.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-1">
+            <div class="imgbox">
+              <img src="../images/activity-spaghetti.jpeg" alt class="boximg" />
             </div>
           </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-1">
+            <h2>Adopt-A-Child</h2>
+            <p>
+              This past December, chapter members hosted their first
+              Adopt-A-Child. The chapter was given a list of less fortunate
+              children from the community and what they wanted for the holidays.
+              Each grade was split up, and made it into a friendly competition
+              to see who could raise the most items for as many children as
+              possible. This added energy and excitement to the event, as well
+              as motivating everyone to participate and donate materials during
+              the holiday season. Overall, hundreds of dollars were raised for
+              this event - just from inside of the chapter. Adopt-A-Child was a
+              huge success (the freshmen won) and the members look forward to
+              doing it for years to come. Not only did it put everyone in the
+              holiday spirit, it also helped to make Christmas better for some
+              children.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-12">
+            <div class="imgbox">
+              <img src="../images/activity-adopt.jpg" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-12">
+            <h2>Bag Bingo</h2>
+            <p>
+              In the Spring of 2019, BASH TSA hosted their third annual designer
+              bag bingo event at the NORCO Fire Company. Tickets were sold ahead
+              of of the event and were gone within weeks following the success
+              of the previous years’ bag bingos. Students helped at the event by
+              setting up, serving food, help run the event, and cleaning up. The
+              profits were split between all students who volunteered to help
+              fund their trip to the state conference.
+            </p>
+            <p>
+              Other items were donated by local vendors, who were able to sell
+              their products during the bingo, giving guests more things to do
+              and a better experience. There was also a 50/50 raffle hosted
+              which generated a lot of participation. Overall, the chapter made
+              a total of $4,500. The popularity of the event year after year
+              exemplifies the community’s support to further students’
+              educational career and opportunities, as well as chapter pride.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-1">
+            <div class="imgbox">
+              <img src="../images/activity-bingo.jpg" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-1">
+            <h2>Painting With a Twist</h2>
+            <p>
+              BASH TSA hosted a social event at Painting With a Twist in
+              November 2018. Members had a good time enjoying snacks and
+              expressing their creativity. They painted snowmen with individual
+              touches and got the opportunity to try and paint each other. This
+              was a good experience for students to work together outside of the
+              typical classroom, as well as socialize outside of normal groups
+              and meet new people in the chapter. The event was successful in
+              developing lasting connections between chapter members.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-12">
+            <div class="imgbox">
+              <img src="../images/activity-pwat.jpg" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-12">
+            <h2>Pink-Out T-Shirts</h2>
+            <p>
+              This past October, BASH-TSA sold pink t-shirts during Homecoming
+              week to boost school spirit, promote breast cancer awareness, and
+              raise a donation for the American Cancer Society. The shirts were
+              sold for $10 the entire week leading up to the Homecoming football
+              game. A total of $4,712 was made and all of the proceeds were
+              donated to the American Cancer Society. At the football game, the
+              stadium was a sea of pink shirts full of excitement and school
+              spirit. This event was a huge success in not only uniting the
+              school, but raising money for a good cause.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-1">
+            <div class="imgbox">
+              <img src="../images/pink.JPG" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-1">
+            <h2>BASH TSA 5k: Back To The 80's</h2>
+            <p>
+              The first ever BASH-TSA 5k was held on Sunday, March 24th at
+              Boyertown High School. Over 70 participants raced in either the 5k
+              or the 1 mile walk. Chapter members either ran in the race, or
+              volunteered. Runners were entered for door prizes, and recieved
+              medals based on their placement and participation. The event was
+              organized by the BASH TSA Officer Team, with treasurer Chris Angus
+              at the helm. The event helped fundraise over $6,000 for the
+              chapter’s yearly ACS contribution.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-12">
+            <div class="imgbox">
+              <img src="../images/activity-race.JPG" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-12">
+            <h2>Relay for Life</h2>
+            <p>
+              BASH-TSA attended their second Relay for Life this year. The
+              chapter attended the Moravian College Relay for Life in 2017, and
+              attended the Millersville Relay for Life this past February. 16
+              members attended the event, which ran from 6 pm to 6 am. The
+              chapter created Relay accounts, and received contributions from
+              family and friends. At the Millersville Relay for Life, chapter
+              members participated in a variety of events, including putting
+              their team members in “jail”, games, and different competitions.
+              Overall, the chapter raised to $470, and had a great time at the
+              event.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-1">
+            <div class="imgbox">
+              <img src="../images/activity-relay.jpg" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+        <div class="row activityRow">
+          <div class="col-sm-6 bodysection order-sm-1">
+            <h2>Clothing Drive</h2>
+            <p>
+              BASH-TSA ran their fourth annual clothing drive, collecting
+              donated clothes, stuffed animals, and blankets from the school and
+              from the community. Over three thousand pounds of clothing were
+              collected in total, amounting to more than $2,000 worth of items.
+              It also achieved a huge number of participators, including
+              students, families, and community members. Two trucks were filled
+              with bags of clothing and then donated to those in need. This
+              drive is a great way to get people involved in a good cause and to
+              show what our club is capable of with teamwork and dedication.
+            </p>
+          </div>
+          <div class="col-sm-6 order-sm-12">
+            <div class="imgbox">
+              <img src="../images/activity-clothing.jpg" alt class="boximg" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <!-- Bottom of Page Navigation -->
-          <nav style="padding-bottom:1rem;">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="education.html" tabindex="-1">&laquo; Education</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#top">Back to Top</a></li>
-              <li class="page-item">
-                <a class="page-link" href="awards.html">Awards &raquo;</a>
-              </li>
-            </ul>
-          </nav>
+      <!-- Bottom of Page Navigation -->
+      <nav style="padding-bottom:1rem;">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="education.html" tabindex="-1"
+              >&laquo; Education</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#top">Back to Top</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="awards.html">Awards &raquo;</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
-        </section>
-            
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
-        </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
     <footer>
-        <div class="notwide">
-            <center>
-            <p>
-                Made by T1285 &emsp; 2018-2019
-            </p>
-            </center>
-        </div>
-    </footer> 
-    </body>
+      <div class="notwide">
+        <center>
+          <p>
+            Made by T1285 &emsp; 2018-2019
+          </p>
+        </center>
+      </div>
+    </footer>
+  </body>
 </html>
