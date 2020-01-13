@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BASH TSA</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700|Poppins:400,700" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/master.css">
+        <!-- For Mobile Users -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="background-image:url('../images/bg-binary.png'); background-repeat: repeat; background-size:888px 424px;">
+        <nav class="header navbar navbar-expand-lg navbar-dark sticky-top">
+            <a class="navbar-brand" href="../index.html">
+              <div class="row">
+                <div class="col nopadding">
+                    <img src="../images/logoColor.png" class="d-inline-block verticalCenter" alt="" style="height:2.5rem;">
+                </div>
+                <div class="col nopadding">
+                    <p>Boyertown Area Senior High School</p>
+                    <small>Technology Student Association</small>
+                </div>
+              </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chapter.html">Chapter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activities.html">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="awards.html">Awards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../tommegun/index.html">Design Brief</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section style="background-color:white; padding-left:1rem;">
+          <div class="row rowSection">
+            <div class="row">
+              <h1>About</h1><br>
+              <hr>
+            </div>
+            <div class="row activityRow">
+              <div class="col-sm-6">
+                  <div class="imgbox">
+                      <img src="../images/about.PNG" alt class="boximg">
+                  </div>
+              </div>
+              <div class="col-sm-6 bodysection">
+                  <h2>About This Website</h2>
+                  <p>
+                    This website was built by team T1285 and submitted to the National Technology Student Association Conference in 2019.
+                  </p>
+                  <p>
+                    It was built entirely using custom HTML, Javascript, and CSS, with use of the open source Bootstrap library, found here : <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>, the jPlayer jQuery library, found here : <a href="http://jplayer.org/">jPlayer</a> and the open source Smoothscroll JS library, found here : <a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">SmoothScrollJS</a>.
+                  </p>
+                  <p>
+                    No templates or content frameworks were used in the creation of this website. It is hosted on Github via Github Pages. The domain bashtsa.website is registered through NameCheap.
+                  </p>
+                  <h2>Forms</h2>
+                  <p>
+                    <a href="https://drive.google.com/open?id=1Za5mgvBwChBArM17rV0pKrC9_Bjh5rw1" target="_blank">LEAP Resume</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=1l6FQRZPKgTal9j_ffHkxKNnUUvrSTs-X" target="_blank">Student Copyright Checklist</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=1l46cun9R7Pb0teDvh3KwaXs-L4Sxdml_" target="_blank">Design Brief Photo Release</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=1Mw7TosIJWIPUpYK6zBmzde2fpKBcmMtr" target="_blank">Chapter Photo Release Forms</a>
+                  </p>
+                  <p>
+                    
+                  </p>
+              </div>
+            </div>
+            <div class="row activityRow">
+              <div class="col-sm-12 bodysection" id="eventDescriptions">
+                  <h2>About TSA</h2>
+                  <p>
+                    TSA is one of the premier STEM student organizations in the world, consisting of over 250,000 members across four countries and 48 states. Its rich history began in 1978 as the American Industrial Arts Student Association, before becoming the Technology Student Association in 1988. Now, TSA represents active advances in its field, providing members opportunities to competitively interact with diverse and developing fields. Consistent of a wide variety of specific competitions - its events - there's certainly no limit of what members can do in TSA. Read more about these events below.
+                  </p>
+                  <h2>About the Events</h2>
+                  <p>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_3danime.png">
+                      <h4>3D Animation</h4>
+                      Participants (two [2] teams of two [2] to six [6] members per state) demonstrate their knowledge of 3D animation technology and design skills to creatively solve the challenge posted on Themes and Problems.
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_animatronics.png">
+                      <h4>Animatronics</h4>
+                      Participants (one [1] team per chapter) demonstrate knowledge of mechanical and control systems by designing, fabricating, and controlling an animatronics device that will communicate, entertain, inform, demonstrate and/or illustrate a topic, idea, subject, or concept. Sound, lights, and a surrounding environment must accompany the device.
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_arch.png">
+                      <h4>Architectural Design</h4>
+                      Participants (one [1] team, or one [1] individual, per chapter) develop a set of architectural plans and related materials for an annual architectural design challenge and construct a physical, as well as a computer-generated model, to accurately depict their design.
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_biotech.png">
+                      <h4>Biotechnology Design</h4>
+                      Participants (three [3] teams per state, two to six [2-6] members per team) select a contemporary biotechnology problem (that relates to the current year's published topic) and demonstrate understanding of it through documented research, the development of a solution, a display (including an optional model or prototype), and an effective multimedia presentation.
+
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_board.png">
+                      <h4>Board Game Design</h4>
+                      Participants (one [1] team per chapter) develop, build, and package a board game that focuses on the subject of their choice. The game should be interesting, exciting, visually appealing, and intellectually challenging. Each team will have to design the packaging, instructions, pieces, and cards associated with creating and piloting a new board game. Semifinalists for the event will set up the game, demonstrate how the game is played, and explain the game's features.
+
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_chapter.png">
+                      <h4>Chapter Team</h4>
+                     Participants (one [1] team of six [6] members per chapter) take a written parliamentary procedures test in order to qualify for the semifinals, in which they complete an opening ceremony, items of business, parliamentary actions, and a closing ceremony within a specified time period.
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_childrens.png">
+                      <h4>Children's Stories</h4>
+                      Participants (three [3] teams or three [3] individuals per state - or a combination of teams and individuals that equals three [3] entries per state) create an illustrated children's story of high artistic, instructional, and social value. The narrative may be written in prose or poetry and take the form of a fable, adventure story, or other structure. The physical story book should be of high quality and designed to meet the year's given theme. The story must have a science, technology, engineering, and mathematics (STEM) focus.
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_coding.png">
+                      <h4>Coding</h4>
+                      Participants (one [1] individual, or one [1] team of two [2] members, per chapter) respond to an annual coding-related design challenge by developing a software program that will accurately address an on-site problem in a specified, limited amount of time.
+
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_cad.png">
+                      <h4>Computer-Aided Design, Architecture</h4>
+                      Participants (two [2] individuals per state) use complex computer graphic skills, tools, and processes to develop representations of architectural subjects, such as foundation and/or floor plans, and/or elevation drawings, and/or details of architectural ornamentation or cabinetry.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_3dcad.png">
+                      <h4>Computer-Aided Design, Engineering</h4>
+                      Participants (two [2] individuals per state) use complex computer graphic skills, tools, and processes to develop three-dimensional representations of engineering subjects such as a machine part, tool, device, or manufactured product.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_cim.png">
+                      <h4>Computer Integrated Manufacturing (CIM)</h4>
+                      Participants (one [1] team of two to six [2-6] members per chapter) design, fabricate, and use Computer Integrated Manufacturing (CIM) to create a promotional product that will showcase the current conference city and/or state.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_debating.png">
+                      <h4>Debating Technological Issues</h4>
+                       Participants (three [3] teams of two [2] members per state) work together to prepare for a debate against a team from another chapter. The teams will be instructed to take either the Pro or Con side of a selected subtopic.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_digital.png">
+                      <h4>Digital Video Production</h4>
+                      Participants (three [3] teams per state; an individual may participate solo in this team event) develop a public service announcement and a digital video (with sound) that focuses on the given year's theme.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_dragster.png">
+                      <h4>Dragster Design</h4>
+                      Participants (two [2] individuals per chapter; one [1] entry per individual) design, produce a working drawing for, and build a CO2-powered dragster.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_engineering.png">
+                      <h4>Engineering Design</h4>
+                      Participants (three [3] teams of three to six [3 - 6] members per state) develop a solution to a National Academy of Engineering grand challenge that is posted on the national TSA website. The solution offered will be informed and designed by precise problem definition, thorough research, creativity, experimentation (when possible), and the development of documents and appropriate models (mathematical, graphical, and/or physical prototype/model). Semifinalist teams present and defend their proposed solution to a panel of judges.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_essays.png">
+                      <h4>Essays on Technology</h4>
+                      Participants (three [3] individuals per state) write a research-based essay (using two or more sources provided on-site) that makes insightful connections about a current technological topic.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_extemp.png">
+                      <h4>Extemporaneous Speech</h4>
+                      Participants (three [3] individuals per state) verbally communicate their knowledge of technology or TSA subjects by giving a speech after having drawn a card on which a technology or TSA topic is written.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_fashion.png">
+                      <h4>Fashion Design and Technology</h4>
+                      Participants (three [3] teams of two to four [2-4] members per state) research, design, and create a portfolio and wearable prototype that reflect the current year's theme. Semifinalist teams participate in a presentation/interview in which they present their garment designs to judges.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_flight.png">
+                      <h4>Flight Endurance</h4>
+                       Participants (two [2] individuals per chapter; one [1] entry per individual) analyze flight principles with a rubber band-powered model aircraft.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_forensics.png">
+                      <h4>Forensic Science</h4>
+                      Participants (one [1] team of two [2] members per chapter) take a written test of basic forensic science theory to qualify as semifinalists. Semifinalist teams will examine a mock crime scene and demonstrate their knowledge of forensic science and crime scene analysis. Students will be expected to survey the scene and use proper techniques to collect evidence from the mock crime scene. Students will then collect their data and perform a detailed written analysis of the crime scene.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_future.png">
+                      <h4>Future Technology Teacher</h4>
+                      Participants (two [2] individuals per chapter) investigate technology education preparation programs in higher education and test their potential as a future technology educator.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_music.png">
+                      <h4>Music Production</h4>
+                      Participants (three [3] teams per state; an individual may participate solo in this team event) produce an original musical piece that is designed to be played during the National TSA Conference opening or closing general sessions.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_ondemand.png">
+                      <h4>On Demand Video</h4>
+                      Participants (one [1] team of two to six [2-6] members per chapter) write, shoot, and edit a 60 second video onsite during the conference.
+                    </div>
+ 		<div class="eventDiv">
+                      <img width="75" src="../images/evt_photo.png">
+                      <h4>Photographic Technology</h4>
+                      Participants (one [1] individual per chapter) demonstrate understanding of and expertise in using photographic and imaging technology processes to convey a message based on a theme. Semifinalists record images and then utilize graphic editing software to prepare a single final image as a solution to an onsite prompt.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_prepared.png">
+                      <h4>Prepared Presentation</h4>
+                      Participants (three [3] individuals per state) deliver an oral presentation, using a digital slide deck, on a topic provided onsite.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_promo.png">
+                      <h4>Promotional Design</h4>
+                      Participants (three [3] individuals per state) use computerized graphic communications layout and design skills in the production of a promotional resource for TSA.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_scivis.png">
+                      <h4>Scientific Visualization (SciVis)</h4>
+                      Participants (three [3] teams per state; an individual may participate solo in this team event) use either 2D or 3D computer graphics tools and design processes to communicate, inform, analyze, and/or illustrate a STEM topic, idea, subject, or concept.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_software.png">
+                      <h4>Software Development</h4>
+                      Participants (one [1] team per chapter) use knowledge of cutting-edge technologies, algorithm design, problem-solving principles, effective communication, and collaborative teamwork to design, implement, test, and document a software development project of educational or social value.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_structural.png">
+                      <h4>Structural Design and Engineering</h4>
+                      Participants (one [1] team of two [2] members per chapter) work as a team to build a designated structure that is posted on the TSA website. Teams apply the principles of structural design and engineering through research, design, construction, destructive testing, and assessment to determine the design efficiency of the structure.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_systems.png">
+                      <h4>System Control Technology</h4>
+                      Participants (one [1] team of three [3] members per state) work on site to develop a computer-controlled model-solution to a problem, typically one from an industrial setting. Teams analyze the problem, build a computer-controlled mechanical model, program the model, explain the program and mechanical features of the model-solution, and write instructions for evaluators to operate the device.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_tech.png">
+                      <h4>Technology Bowl</h4>
+                      Participants (one [1] team of three [3] members per chapter) demonstrate their knowledge of TSA and concepts addressed in the technology content standards by completing a written, objective test; semifinalist teams participate in question/response, head to head team competition.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_problem.png">
+                      <h4>Technology Problem Solving</h4>
+                      Participants (one [1] team of two [2] members per chapter) use their skills in problem solving to develop a finite solution to a problem provided on site.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_transportation.png">
+                      <h4>Transportation Modeling</h4>
+                      Participants (one [1] individual per chapter) research, design, and produce a scale model of a vehicle that fits the annual design problem.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_video.png">
+                      <h4>Video Game Design</h4>
+                      Participants (three [3] teams per state) develop a game that focuses on the yearly theme. The game must have high artistic, educational, and social value and be interesting, exciting, visually appealing, and intellectually challenging.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_webmaster.png">
+                      <h4>Webmaster</h4>
+                      Participants (one [1] team of three to five [3-5] members per chapter) design, build, and launch a website that features the school's career and technology/engineering program, the TSA chapter, and the chapter's ability to research and present a given topic pertaining to technology. Semifinalists participate in an onsite interview to demonstrate the knowledge and expertise gained during the development of the website with an emphasis on web design methods and practices, as well as their research for the annual design topic. 
+                    </div>
+		<p>
+			
+			<i>
+			Event descriptions courtesy of TSAweb.org
+			</i>
+
+		</p>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_computer.png">
+                      <h4>PA-Computer Systems Troubleshooting</h4>
+                      Teams test their computer troubleshooting skills in a written exam, as well as an on-site portion. Skills in PC system assembly, software and hardware evaluation are crucial for success. 
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_electronic.png">
+                      <h4>PA-Electronic Research and Experimentation</h4>
+                      In this challenging event, teams research, design, and create their own electronic device. Teams produce comprehensive schematics for their devices, as well as develop a display and provide evidence of their experimentation.
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_logo.png">
+                      <h4>PA-Logo Design</h4>
+                      Individuals design a logo for the next PA-TSA State Conference using computer graphics. Participants demonstrate skills in digital communications as well, as the event focuses heavily on the process of screen printing. 
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_materials.png">
+                      <h4>PA-Materials Processes</h4>
+                      Materials Processes is an individual event that allows participants to display their fabrication and creative skills. Projects are graded on their proper usage of materials and design features, and workmanship of their product. 
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_rc.png">
+                      <h4>PA-R/C Off-Road Racing</h4>
+                      Teams design and maintain a radio-controlled vehicle, and perform tasks whilst racing through an obstacle course. This event promotes teamwork, problem-solving and technical skills, and is especially fun for participants and viewers alike!
+                    </div>
+		<div class="eventDiv">
+                      <img width="75" src="../images/evt_safety.png">
+                      <h4>PA-Safety Illustration</h4>
+                      Individuals create an original poster using computer graphics to promote an idea that pertains to "Safety First when using Technology". Competitors also submit an essay that explains and furthers the idea illustrated in their poster.
+                    </div>
+                    <div class="eventDiv">
+                      <img width="75" src="../images/evt_robotics.png">
+                      <h4>PA-Robotics</h4>
+                      Teams use VEX robotics kits to design, build, and code a robot which must complete a specific annually-changing course. Teams also submit documentation of their design process. This event is especially valuable in the context of a rapidly expanding robotics field worldwide.
+                    </div>
+
+                    </div>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Bottom of Page Navigation -->
+          <nav style="padding-bottom:1rem;">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="awards.html" tabindex="-1">&laquo; Awards</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#top">Back to Top</a></li>
+              <li class="page-item">
+                <a class="page-link" href="../index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
+            
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+
+    <footer>
+        <div class="notwide">
+            <center>
+            <p>
+                Made by Team T1285 &emsp; 2018-2019
+            </p>
+            </center>
+        </div>
+    </footer> 
+    </body>
+</html>

@@ -1,0 +1,792 @@
+/*
+Styling for TSA Webmaster style-guide.
+@author Ethan Witherington etw9578@rit.edu
+@author Joshua Famous joshua.famous@gmail.com
+*/
+.dark {
+  background-color: #1e1e1e;
+}
+.darkgray {
+  background-color: #43494D;
+}
+.gray {
+  background-color: #E9EBED;
+}
+.lightgray {
+  background-color: #F5F5F5;
+}
+.light {
+  background-color: #FBFBFB;
+}
+.base {
+  background-color: #0a2463;
+}
+.accent {
+  background-color: #d62828;
+}
+.hilight {
+  background-color: #3e92cc;
+}
+.shadow_1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.shadow_2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.shadow_3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.shadow_4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.aesthetic {
+  letter-spacing: 0.5px;
+}
+html{
+  font-size:14px;  /* This literally defines the font size of the entire doc - important ! */ 
+  height:100vh;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 575px) {
+  html{
+  overflow-x: auto;
+}
+}
+body {
+  margin: 0;
+  padding: 0 0;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  background-color: white;
+}
+section {
+  max-width:1200px;
+  padding-top: 3rem;
+  margin:0 auto;
+  min-height:80%;
+  padding-left:1rem;
+  border-left:3px solid #E9EBED;
+  border-right:3px solid #E9EBED;
+}
+@media only screen and (max-width: 1200px) {
+  section {
+    border-left:0px solid #E9EBED;
+    border-right:0px solid #E9EBED;
+    padding-left:0rem;
+  }
+}
+.fullsection{
+  max-width:100% !important;
+}
+@media only screen and (max-width: 575px) {
+  section {
+    padding-top: 1rem;
+  }
+}
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #D62828;
+}
+h2 {
+  font-size: 2rem;
+  color:#3e92cc;
+}
+hr {
+  border: 0;
+  background-color: #0A2463;
+  height: 3px;
+  width:100%;
+  margin-top:0;
+  margin-bottom:2rem;
+}
+@media only screen and (max-width: 1200px) {
+  hr {
+    margin-left:14px;
+    margin-bottom:0.5rem;
+  }
+  h1{
+    margin-left:1rem;
+  }
+}
+p,
+ul {
+  padding-left: 1rem;
+}
+a {
+  color: #0a2463;
+}
+.page-link{
+  color: #3e92cc !important;
+}
+a:hover {
+  color: #d62828;
+}
+.notwide {
+  max-width: 100%;
+}
+.magic {
+  display: block;
+}
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.centerFlex{
+	width:100%;	
+}
+.centerFlex div{
+	flex-basis: 45%;
+	flex-grow: 1;
+}
+.flex_left{
+  justify-content: flex-start !important;
+}
+.flex_right{
+  justify-content: flex-start !important;
+}
+.flex_left p {
+  max-width:100%;
+  min-width:60%;
+}
+.flex_right p {
+  max-width:100%;
+  min-width:60%;
+}
+@media only screen and (min-width: 500px) {
+  .flex_left{
+    justify-content: flex-start !important;
+    flex-wrap:nowrap !important;
+  }
+  .flex_right{
+    justify-content: flex-end !important;
+    flex-wrap:nowrap !important;
+  }
+  .flex_left p {
+    max-width:50%;
+  }
+  .flex_right p {
+    max-width:50%;
+  }
+}
+.code {
+  background-color: #E9EBED;
+  color: #1e1e1e;
+  padding: 0.25rem 0.5rem;
+  font-family: monospace;
+}
+.header {
+  background-color: #0a2463;
+  padding: 1rem 3rem 1rem 3rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.header p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:1.5rem;
+  margin:0;
+  color:white;
+}
+.header small{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-size:1rem;
+  margin:0;
+  padding-left: 1rem;
+  color:white;
+}
+.header .notwide {
+  justify-content: center;
+}
+.header img {
+  margin: 0.1rem;
+  display: inline-block;
+  float:center;
+}
+@media only screen and (max-width: 575px) {
+  .header {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .header img{
+    /*display: none !important;   ~~JOSH~~ I've removed this because on all tested resolutions it appears to be responsiveness even with brandimg*/
+  }
+}
+@media only screen and (max-width: 575px) {
+  p, ul, small {
+    padding: 0;
+  }
+  .header p{
+    padding-left: 4px;
+    font-size:3vw;
+  }
+  .header small{
+    padding-left: 4px;
+    font-size:2vw;
+  }
+}
+.header h1 {
+  display: inline-block;
+  margin: 1rem;
+  color: #FBFBFB;
+  text-align: center;
+}
+.navigation {
+  background-color: white;
+  margin: 0 -2rem;
+}
+.navigation .notwide a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FBFBFB;
+  margin: 1rem;
+  letter-spacing: 0.5px;
+}
+.navigation .notwide a:hover {
+  text-decoration: underline;
+  color: #d62828;
+}
+#logos img {
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  background-color: white;
+  color: #FBFBFB;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  letter-spacing: 0.5px;
+}
+.swatch {
+  border: 1px solid #1e1e1e;
+  margin: 1rem;
+  background-color: #FBFBFB;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.swatch .color {
+  height: 3.75rem;
+}
+.swatch p {
+  margin: 1rem;
+  padding: 0;
+}
+.coursecard{
+  text-align:center;
+}
+.coursecard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.coursecard span{
+  border-radius: 50%;
+  width:120px;
+  height:120px;
+  background-size:80% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  opacity:0.6;
+  cursor:pointer;
+}
+.coursecard span:hover{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  opacity:1;
+}
+.coursecard span:active{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #d62828;
+}
+.coursecard_active span{
+  box-shadow: 2px 3px 6px rgba(214, 40, 40, 0.25), 2px 3px 6px rgba(214, 40, 40, 0.35);
+  opacity:1;
+}
+@media only screen and (max-width: 575px) {
+  .coursecard{
+    width:125px;
+    height:90px;
+  }
+  .coursecard span{
+    width: 60px;
+    height: 60px;
+  }
+  .projectcard p{
+    padding:0;
+    font-size:0.75rem;
+    line-height:1;
+  }
+}
+.courseSection {
+  padding-left:1rem;
+  padding-right:1rem;	
+}
+.courseSection p{
+	padding-left:0;	
+}
+.teachercard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width:400px;
+  height:250px;
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+}
+.teachercard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.teachercard small{
+  padding: 0rem 0rem 0rem 1rem;
+  color: black;
+  font-size: 1rem;
+  overflow:wrap;
+  display:block;
+}
+.teachercard img{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.teachercard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.teachercard div{
+	padding: 0;	
+}
+
+@media only screen and (max-width: 575px) {
+  .teachercard{
+    width:90vw;
+    height:auto;
+  }
+  .teachercard div{
+    padding-bottom:0.375rem; /* There will always be two nested divs in teacher card. 2 * 0.375 = 0.75, to match top */
+  }
+}
+
+.awardcard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius:0.1rem;
+  border-left: 2px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+  padding:2rem 2rem 2rem 2rem;
+}
+.awardcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-size:1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.awardcard small{
+  padding: 0rem 0rem 0rem 1rem;
+  color: black;
+  font-size: 1.2rem;
+  overflow:wrap;
+  display:block;
+}
+.awardcard img{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.awardcard:hover{
+  transform: translate(0,-2px);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color:#FBFBFB;
+  cursor:pointer;
+}
+.awardcard div{
+  padding: 0; 
+}
+@media only screen and (max-width: 575px) {
+  .awardcard{
+    width:90%;
+    height:auto;
+  }
+  .awardcard div{
+    padding-bottom:0.375rem; /* There will always be two nested divs in award card. 2 * 0.375 = 0.75, to match top */
+  }
+}
+.projectcard{
+  text-align:center;
+  width:250px;
+  height:180px;
+}
+.projectcard p{
+  padding: 0.75rem 1rem 0rem 1rem;
+  margin-bottom:0rem;
+  color: #0a2463;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.projectcard span{
+  border-radius: 50%;
+  width:120px;
+  height:120px;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  opacity:0.6;
+  background-size:cover;
+  cursor:pointer;
+}
+.projectcard span:hover{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  opacity:1;
+}
+.projectcard span:active{
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #d62828;
+}
+.projectcard_active span{
+  box-shadow: 2px 3px 6px rgba(214, 40, 40, 0.25), 2px 3px 6px rgba(214, 40, 40, 0.35);
+  opacity:1;
+}
+@media only screen and (max-width: 575px) {
+  .projectcard{
+    width:125px;
+    height:90px;
+  }
+  .projectcard span{
+    width: 60px;
+    height: 60px;
+  }
+  .projectcard p{
+    padding:0;
+    font-size:0.75rem;
+    line-height:1;
+  }
+}
+.mottocard {
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius:0.1rem;
+  border-left: 5px solid #0a2463;
+  transition: all 0.2s;
+  overflow-x:hidden;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.box {
+  border: 1px solid #1e1e1e;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #FBFBFB;
+}
+.imgbox{
+  padding:0.5rem !important;
+}
+.boximg{
+  width:100%;
+  display:block;
+}
+.half{
+  padding:0.5rem;
+  margin:0.5rem;
+}
+.button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  letter-spacing: 0.5px;
+}
+.b_accent {
+  border: 0.15em solid #d62828;
+  background-color: #FBFBFB;
+  color: #d62828;
+}
+.b_accent:hover {
+  background-color: #d62828;
+  color: #FBFBFB;
+}
+.b_base {
+  border: 0.15em solid #0a2463;
+  background-color: #FBFBFB;
+  color: #0a2463;
+}
+.b_base:hover {
+  background-color: #0a2463;
+  color: #FBFBFB;
+}
+.b_dark {
+  border: 0.15em solid #1e1e1e;
+  background-color: #FBFBFB;
+  color: #1e1e1e;
+}
+.b_dark:hover {
+  background-color: #1e1e1e;
+  color: #FBFBFB;
+}
+.b_hilight{
+  border: 0.15em solid #3e92cc;
+  background-color:#FBFBFB;
+  color:#3e92cc;
+}
+.b_hilight:hover{
+  color:#FBFBFB;
+  background-color:#3e92cc;
+}
+.text_hilight{
+  color:#3e92cc;
+}
+.whitesection h1{
+  color:white;
+}
+.whitesection h2{
+  color:white;
+}
+.whitesection p{
+  color:white;
+}
+.whitesection li{
+  color:white;
+}
+.whitesection a{
+  color:white;
+}
+.whitesection hr{
+  background-color:white;
+}
+footer {
+  margin: 0;
+  background-color: #0a2463;
+  color: white;
+  padding: 1rem;
+}
+
+.nopadding{
+  padding:0;
+}
+
+.nav-item{
+  font-size:1.5rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.nav-link{
+  color:white !important;
+  text-decoration: none;
+  transition: color 0.1s;
+  display: inline-block;
+}
+
+.nav-link::after{
+  content: '';
+  width: 0;
+  display: block;
+  height: 2px;
+  transition: width 0.3s;
+  background: #D62828 !important;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+
+.nav-link:hover{
+  color: #D62828 !important;
+}
+
+.active{
+  color: #3E92CC !important;
+  text-decoration: none;
+  transition: color 0.1s;
+  display: inline-block;
+}
+
+.active:hover{
+  cursor:default;
+  color: #3E92CC !important;;
+}
+
+.active::after{
+  content: '';
+  width: 0;
+  display: block;
+  height: 0 !important;
+  transition: none !important;
+}
+
+.bodysection p{
+  padding-left:0;
+}
+
+@media only screen and (max-width: 575px) {
+  .bodysection{
+    padding-left:22px;
+  }
+}
+
+.verticalCenter{
+  position:relative; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);
+}
+
+.row{
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+.rowSection{
+  padding-bottom:4rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .col, .col-sm-6 {
+    padding-right:0 !important;
+    margin-right:0 !important;
+  }
+
+  .row {
+    max-width:100% !important;
+  }
+}
+
+.activityRow{
+  padding-bottom:3rem;
+}
+
+#projectImage{
+  object-fit: cover;
+  width:100%;
+  height:350px;
+}
+
+@media only screen and (max-width: 575px) {
+  #projectImageCol{
+    padding-left:0px;
+  }
+}
+
+.projectSection{
+  background-color:white;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.projectSection p{
+  margin-bottom:2rem;
+}
+
+.quoteText{
+	font-size:1.75rem;
+	font-style:italic;
+}
+
+.blockquote-footer{
+	background-color: white !important;
+}
+
+.titleImage{
+  height: calc(100vh - 95px);
+  object-fit:cover;
+  object-position:0px 27.5%;
+}
+
+.crossTitleBar{
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9));
+  z-index:100;
+  width:100%;
+  height:100%;
+  color:#0A2463;
+  position:absolute;
+  bottom:-1px;
+  text-align:center;
+}
+
+.crossTitleText{
+  color:white;
+  position:absolute;
+  bottom:40%;
+  width:100%;
+  font-size:8rem;
+  text-shadow:0 0 20px black;
+  padding-bottom:2rem;
+  line-height:0.5;
+}
+
+@media only screen and (max-width: 830px) {
+  .crossTitleText{
+    line-height:1;
+  }
+}
+
+.crossTitleSubtext{
+  color:white;
+  font-size:2rem;
+  text-shadow:0 0 20px black;
+  padding-bottom:0rem;
+  line-height:1;
+}
+
+@media only screen and (max-width: 575px) {
+  .crossTitleText{
+    font-size:16vw;
+  }
+  .crossTitleSubtext{
+    font-size:8vw;
+  }
+}
+
+#eventDescriptions h4{
+  color:#0a2463;
+}
+
+.eventDiv{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  min-height:75px;
+}
+
+.eventDiv img{
+  float:left;
+  padding-right:1rem;
+}
+
+.teacherpic{
+  object-fit: cover;
+  width:200px;
+  height:260px;
+}
+
+@media only screen and (max-width: 575px) {
+  .teacherpic{
+    margin-top:4rem;
+  }
+
+  .titleimg{
+    display:none;
+  }
+}

@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BASH TSA</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700|Poppins:400,700" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/master.css">
+        <!-- For Mobile Users -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="background-image:url('../images/bg-gears.png'); background-repeat: repeat; background-size:444px 212px;">
+        <nav class="header navbar navbar-expand-lg navbar-dark sticky-top">
+            <a class="navbar-brand" href="../index.html">
+              <div class="row">
+                <div class="col nopadding">
+                    <img src="../images/logoColor.png" class="d-inline-block verticalCenter" alt="" style="height:2.5rem;">
+                </div>
+                <div class="col nopadding">
+                    <p>Boyertown Area Senior High School</p>
+                    <small>Technology Student Association</small>
+                </div>
+              </div>
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chapter.html">Chapter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activities.html">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="awards.html">Awards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../tommegun/index.html">Design Brief</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section style="background-color:white;">
+          <div class="row rowSection">
+            <div class="row">
+              <h1>Courses at Boyertown Area Senior High School</h1><br>
+              <hr style="margin-bottom:0.5rem;">
+              <small style="margin-bottom:4rem;">Click a picture to browse courses in that subject area</small>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                  <div class="flex_container" style="margin-bottom:4rem;">
+                    <div class="coursecard" id="scienceCourseCard" data-courseType="science" onclick="loadCourses(this);"><span style="background-image: url('../images/sa-sci.png');"></span><p>Science</p></div>
+                    <div class="coursecard" data-courseType="technology" onclick="loadCourses(this);"><span style="background-image: url('../images/sa-tech.png');"></span><p>Technology</p></div>
+                    <div class="coursecard" data-courseType="engineering" onclick="loadCourses(this);"><span style="background-image: url('../images/sa-eng.png');"></span><p>Engineering</p></div>  
+                    <div class="coursecard" data-courseType="art" onclick="loadCourses(this);"><span style="background-image: url('../images/sa-art.png');"></span><p>Art</p></div>
+                    <div class="coursecard" data-courseType="business" onclick="loadCourses(this);"><span style="background-image: url('../images/sa-bus.png');"></span><p>Business</p></div>
+                    <div class="coursecard" data-courseType="math" onclick="loadCourses(this);"><span style="background-image: url('../images/sa-math.png');"></span><p>Math</p></div>  
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Honors Java</h2>
+                    <p>
+                        <span class=""></span>This course is designed for students with an interest in computer science or pursuing a STEM career. Students will learn fundamentals of computer science, structured programs, and programming skills using Java. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Chemistry</h2>
+                    <p>
+                        <span class=""></span>This course is designed for students planning a career in science and chemistry. It covers advanced topics such as chemical equilibrium, chemical kinetics, and thermodynamics. It implements complex laboratory investigations and in-depth analysis utilizing word processing and computer graphing skills.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Biology</h2>
+                    <p>
+                        <span class=""></span>This is an advanced biology course designed for students interested in pursuing a career in science. It focuses on a wide range of topics including evolution, cellular processes, information transfer, and systems interactions.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Physics 1</h2>
+                    <p>
+                        <span class=""></span>This is an advanced algebra-based physics course for students who excel in science and or math. It includes complex and in-depth laboratory investigations utilizing word processing and computer graphing skills. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Physics C</h2>
+                    <p>
+                        <span class=""></span>This course is a calculus-based physics course designed for students planning to major in physics, astronomy, mathematics, or engineering. It will focus on applying calculus topics to physics.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="science">
+                    <h2>AP Environmental Science</h2>
+                    <p>
+                        <span class=""></span>This course is taught at the level of an introductory college course in environmental science and is for students interested in pursuing a career in science. It focuses on complex natural systems, environmental problems, risks, alternatives, and solutions, as well as including field investigation as well as laboratory work. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Technical Drawing</h2>
+                    <p>
+                        <span class=""></span>This course is for students who are interested in a technological career. It covers the methods, materials, instruments and techniques of technical drawing in engineering and architecture using SolidWorks. Students also have the ability to 3D print their designs in order to see the physical construction of them.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Advanced Engineering</h2>
+                    <p>
+                        <span class=""></span>This course is designed for students who are interested in becoming a technical professional. Students will create innovative working prototypes using SolidWorks and have the opportunity to 3-D print a scaled model of the design. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Advanced Materials Engineering</h2>
+                    <p>
+                        <span class=""></span>This is a technology education class centered on understanding the qualities and characteristics of the materials being used for students interested in a technology profession. It uses materials such as wood, metal, plastics, glass, and composites. It also teaches processes such as molding, casting, bending, making precise cuts, turning, welding, and applying finishes. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Advanced Multimedia Technologies</h2>
+                    <p>
+                        In <span class="">Advanced Multimedia Technologies</span>, students apply design and communication skills to the industry standard and use printing technology.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Telecommunications I and II</h2>
+                    <p>
+                        <span class=""></span>Telecomm is for students interested in digital communications. It introduces them to multi-camera studio television production as well as single-camera field production. It includes hands-on training in camera, sound, lighting, graphics, directing, recording, editing, script writing, and concepts of mass media. Students will work with all the equipment of studio television production and produce a number of programs including talk shows, news programs and short features.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="engineering">
+                    <h2>Residential Construction</h2>
+                    <p>
+                        <span class=""></span>This course is for students who wish to pursue a career in construction or architecture. It teaches the processes and trades involved in building houses and other structures. Students will learn about surveying sites, finishing carpentry, electrical wiring, plumbing, cabinetmaking, and more. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Photographic Imaging</h2>
+                    <p>
+                        <span class=""></span>This is a hands-on course designed for students interested in photography. It will teach the fundamentals of photography including stop action, depth of field, macro and portrait photography, along with techniques to improve photo-taking skills. The course will also utilize Adobe Photoshop and Lightroom in a digital photo lab. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="technology">
+                    <h2>Digital Communications</h2>
+                    <p>
+                        <span class=""></span>This course will teach students how to create the graphics and digital images. Students will learn how to put these designs on T- shirts, create vinyl graphics and decals for cars or windows, design album covers, and create websites with streaming audio and video. It will also teach how to promote business, groups or organizations through media.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Painting</h2>
+                    <p>
+                        <span class=""></span>This course teaches students the fundamentals of painting with a variety of painting media and styles, as well as information about the color wheel, mixing colors, design, and composition. Students learn to use a variety of mediums such as watercolors, oils, and acrylics. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Weaving</h2>
+                    <p>
+                        <span class=""></span>Weaving is designed for students with an interest in weaving and crafts. It will teach students loom and non-loom processes processes such as loom weaving and basketry. They will also learn hand-crafted design techniques dealing with a variety of mediums. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Ceramics</h2>
+                    <p>
+                        <span class=""></span>This course is designed for students with an interest in the ceramic arts. The main focus of the class is to have students learn skills that enable them to create functional works in clay. Students will be taught basic and intensive skills in order to create various three-dimensional forms through hand built and wheel throwing techniques. They use these skills to create sculptures, mugs, bowls, and many other clay pieces.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>Animation</h2>
+                    <p>
+                        <span class=""></span>Animation teaches students how to use Adobe Flash and other apps to learn about many animation techniques. Students will get to explore interactive animation, character development, story design, and professional portfolio preparation.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="art">
+                    <h2>AP Studio Art</h2>
+                    <p>
+                        <span class=""></span>This course is for seniors who have an interest in pursuing art studies after graduation. Students will pursue independent, individual studies or teacher-led activities with the opportunity to incorporate many different subjects and mediums.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Criminal/Civil Law</h2>
+                    <p>
+                        <span class=""></span>This course is for students interested in pursuing a career in law enforcement. They will study and investigate civil and criminal law, the court system, making contracts, and applying that knowledge to everyday life. They will also get to participate in a mock trial and visit the Berks County Court system.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Honors Accounting</h2>
+                    <p>
+                        <span class=""></span>Honors accounting is for students who want to pursue a career in accounting. They will learn about the accounting cycle and receive experience with automated accounting using Excel and QuickBooks.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>Concurrent Enrollment Web Design</h2>
+                    <p>
+                        <span class=""></span>CE Web Design is for students with an interest in programming. They will implement softwares such as Dreamweaver and learn basic HTML code, Java scripts, macromedia flash, and Cascading Style Sheets as well as a multitude of technical elements that will be applied. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>AP Computer Science</h2>
+                    <p>
+                        <span class=""></span>AP Computer Science is for students interested in going into a programming field. It emphasizes programming through the study of algorithms, data structures, and data abstraction. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="business">
+                    <h2>App Development</h2>
+                    <p>
+                        <span class=""></span>App Development is designed for students with an interest in programming. Students will learn how to build, debug and test a sample Unity iOS game, screens and icons, and how to include iAds.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>Algebra II</h2>
+                    <p>
+                        <span class=""></span>This course is a continuation of Algebra and continues to develop math skills. The course focuses on the study of properties of real numbers, exponents, radicals, quadratic functions, sequences, logarithms and matrices. 
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>Pre-Calculus</h2>
+                    <p>
+                        <span class=""></span>This course is for students who have successfully completed Algebra 2 and Geometry and have satisfactory algebra skills. It will focus on topics including function behavior, exponentials and logarithms, trigonometry, and limits.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>AP Statistics</h2>
+                    <p>
+                        <span class=""></span>This course is designed to introduce students to collecting, analyzing, and drawing conclusions from data. It emphasizing the understanding of concepts rather than the memorization of formulas. AP Stat can be an alternative to calculus for students who will not pursue science or engineering related fields.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>AP Calculus AB</h2>
+                    <p>
+                        <span class=""></span>This is a continuation of Calculus and covers all the topics to prepare students to take the AB level of the AP Calculus exam, equivalent to 1.5 semesters of college calculus. It requires extensive work outside of class and is for dedicated math students interested in STEM.
+                    </p>
+                  </div>
+                  <div class="courseSection" data-courseType="math">
+                    <h2>AP Calculus BC</h2>
+                    <p>
+                        <span class=""></span>This course is a continuation of calculus for teacher-recommended students and teaches them the skills required to take the BC level of the AP Calculus exam, which is the the equivalent of 2.5 semesters of college calculus. 
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="row">
+              <h1>Teachers at Boyertown Area Senior High School</h1><br>
+              <hr style="margin-bottom:0.5rem;">
+              <small style="margin-bottom:4rem;">Read about the Technology Education and STEM teachers at Boyertown</small>
+            </div>
+            <div class="row rowSection">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7 bodysection">
+                    <h2>Joshua Pennington</h2>
+                    <p>
+                      Mr. Pennington has been teaching for 12 years. He went to California University of Pennsylvania to get a master’s degree in Classroom Technology. He teaches photography and imaging classes. Mr. Pennington sees technology use in the classroom as a way to take things that we learn school and apply them into situations that we can use in the real world.<br>
+                      <a style="float:right;" href="mailto:jpennington@student.boyertownasd.org">jpenningtown@boyertownasd.org</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <center>
+                        <img class="teacherpic" src="../images/jpenny.jpg">
+                    </center>
+                </div>
+            </div>
+            <div class="row rowSection">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7 bodysection">
+                    <h2>Chad Roth</h2>
+                    <p>
+                      Mr. Roth has been teaching for 17 years. He went to Millersville University for a master’s in Elementary Education. He teaches classes such as Robotics courses. Mr. Roth uses technology in the classroom to help engage students, make the concepts that are taught relevant and to prepare students for jobs outside of high school that are reliant on technology.<br>
+                      <a style="float:right;" href="mailto:croth@student.boyertownasd.org">croth@student.boyertownasd.org</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <center>
+                        <img class="teacherpic" src="../images/Teacher-Roth.JPG">
+                    </center>
+                </div>
+            </div>
+            <div class="row rowSection">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7 bodysection">
+                    <h2>Jason Valick</h2>
+                    <p>
+                      Mr. Valick has been teaching for 24 years. He went to Ball State University to get his master’s degree. He teaches Tech drawing classes. Mr. Valick thinks if we aren’t coming up with new ways and technologies to help students we are going to go backwards as a society.<br>
+                      <a style="float:right;" href="mailto:jvalick@student.boyertownasd.org">jvalick@student.boyertownasd.org</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <center>
+                        <img class="teacherpic" src="../images/Teacher-Valick.jpg">
+                    </center>
+                </div>
+            </div>
+            <div class="row rowSection">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7 bodysection">
+                    <h2>Kenneth Burton</h2>
+                    <p>
+                      Mr. Burton has been teaching for 24 years. He went to Rochester Institute of Technology for graduate school. As far as technology’s role in education, Mr. Burton is deeply concerned we are raising a generation of people that do not know how to do anything, and he is trying to combat that.<br>
+                      <a style="float:right;" href="mailto:kburton@student.boyertownasd.org">kburton@student.boyertownasd.org</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <center>
+                        <img class="teacherpic" src="../images/Teacher-Burton.JPG">
+                    </center>
+                </div>
+            </div>
+            <div class="row rowSection">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7 bodysection">
+                    <h2>Andrew Schopf</h2>
+                    <p>
+                      Mr. Schopf has been teaching for 10 years and went to Millersville University to earn a master’s degree in Classroom Technology. The value of a technology education by Mr. Schopf is to see where we have been, what we are capable of and what is possible in the future.<br>
+                      <a style="float:right;" href="mailto:aschopf@student.boyertownasd.org">aschopf@student.boyertownasd.org</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <center>
+                        <img class="teacherpic" src="../images/Teacher-Schopf.JPG">
+                    </center>
+                </div>
+            </div>
+            <div class="row rowSection">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7 bodysection">
+                    <h2>Susan Cassidy</h2>
+                    <p>
+                     Mrs. Cassidy has been teaching for 10 years. She went to Penn State for her bachelor’s degree in Engineering and to Kutztown for her teaching degree. Mrs. Cassidy thinks that the most important part of education is giving students opportunities and helping them work up to their true potentials. <br>
+                      <a style="float:right;" href="mailto:scassidy@student.boyertownasd.org">scassidy@student.boyertownasd.org</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <center>
+                        <img class="teacherpic" src="../images/Teacher-Susan.JPG">
+                    </center>
+                </div>
+            </div>
+          </div>
+          <div class="row rowSection">
+            <div class="row">
+              <h1>Student Projects in STEAM Courses</h1><br>
+              <hr style="margin-bottom:0.5rem;">
+              <small style="margin-bottom:4rem;">Click a project picture to read more about it</small>
+            </div>
+            <div class="row">
+                <div class="flex_container">
+                  <div class="projectcard" id="deconstructionProject" onclick="loadProject(this);" data-imageURL="../images/project-deconstruction.jpg" data-projectTitle="deconstruction"><span style="background-image: url('../images/project-deconstruction.jpg');"></span><p>Tech Deconstruction</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-coaster.jpg" data-projectTitle="coaster"><span style="background-image: url('../images/project-coaster.jpg');"></span><p>Roller Coaster</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-math.png" data-projectTitle="math"><span style="background-image: url('../images/project-math.png');"></span><p>History of Math</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-bridge.jpg" data-projectTitle="bridge"><span style="background-image: url('../images/project-bridge.jpg');"></span><p>Bridges</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-printing.jpg" data-projectTitle="printing"><span style="background-image: url('../images/project-printing.jpg');"></span><p>Screen Printing</p></div>
+                  <div class="projectcard" onclick="loadProject(this,false);" data-imageURL="../images/project-magpie.jpg" data-projectTitle="magpie"><span style="background-image: url('../images/project-magpie.jpg');"></span><p>Magpie Lab</p></div>
+                </div>
+            </div>
+            <div class="row" id="projectData" style="margin-top:4rem;">
+                <div class="col-sm-6" id="projectImageCol">
+                  <div class="imgbox">
+                    <img src="../images/project-deconstruction.jpg" id="projectImage" alt class="boximg constantSize" width="100%">
+                  </div>
+                </div>
+                <div class="col-sm-6 bodysection">
+                  <div class="projectSection" data-projectTitle="deconstruction">
+                    <h2>Tech Deconstruction</h2>
+                    <p>
+                      In this technology education project, students deconstruct pieces of technology in order to understand its component parts. Through reverse engineering, students are able to see what makes things work the way that they do. Students are able to disassemble multiple products to see the engineering involved in them. This is a fun and effective product in teaching because it helps the students to visualize and interact with what they learn about. 
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="coaster">
+                    <h2>Roller Coaster</h2>
+                    <p>
+                      In this project for AP Physics, students work to build a roller coaster out of paper and keep a ball rolling through it. This is done through measurements and calculations to predict how far the ball will be able to go, while also being supported by the paper structure. By doing this, students learn about conservation of energy and projectile motion while adding an exciting, hands-on element to it. Although it is a lot of work, this is a very fun project for students to build and compete together while learning and having fun.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="math">
+                    <h2>History of Math</h2>
+                    <p>
+                      In this math project, students write a history of a math concept and present it. Students research and present their findings of the discoveries of multiple different mathematical concepts and equations. This helps them to understand the basis of math concepts and are able to apply them better to real life situations. It is important for students to understand how certain concepts were discovered to better understand them and observe how mathematics have developed over the years. It is a fun and in-depth research project that really gets students involved.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="bridge">
+                    <h2>Bridges</h2>
+                    <p>
+                      In this project for Technology and Engineering, students use wood and popsicle sticks to build a sturdy bridge. The goal is to create a bridge that spans 36 inches and is able to support 44 pounds. To do this, students must utilize the knowledge about different types of bridges and structures. This event is a favorite among tech-ed students because they get a hands-on approach to learning about structures. Once the bridges are built, they have fun placing weights and even standing on them to see how much weight their structures are able to support. Building them is entertaining for everyone and a great learning experience. 
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="printing">
+                    <h2>Screen Printing</h2>
+                    <p>
+                      In this project for Digital Communications, students are able to design and create their own T-Shirts. Students are taught how to use Illustrator and the process is started by using it to design an image. It is printed to transparency paper and placed on blue polyfilm to transfer, and the film is then used to transfer it onto a screen. After that, the screen can be placed on the shirt and ink is rolled on, creating the final result. By learning the process, students see how shirts are made and develop new skills. This is a favorite project of many students because they get to express their creativity by designing whatever image they want. Once their hard work is done, they are able to present and actually wear their creation, which is exciting for everyone.
+                    </p>
+                  </div>
+                  <div class="projectSection" data-projectTitle="magpie">
+                    <h2>Magpie Lab</h2>
+                    <p>
+                      In this project for AP Computer Science, students make and program an AI chatbot. This shows students how to use programming tools, write code, and introduce them to modern technologies, such as AIs. Students have fun programming with the skills that they have learned and even more fun using the finished AI to maintain conversations. These AIs are often impressive and show one way that programming skills can be utilized in the modern world. 
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Bottom of Page Navigation -->
+          <nav style="padding-bottom:1rem;">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="chapter.html" tabindex="-1">&laquo; Chapter</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#top">Back to Top</a></li>
+              <li class="page-item">
+                <a class="page-link" href="activities.html">Activities &raquo;</a>
+              </li>
+            </ul>
+          </nav>
+
+        </section>
+            
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+        <script src="../js/scripts.js" type="text/javascript"></script>
+        <script> loadCourses(document.getElementById("scienceCourseCard")); </script>
+        <script> loadProject(document.getElementById("deconstructionProject"),true); </script>
+
+    <footer>
+        <div class="notwide">
+            <center>
+            <p>
+                Made by T1285 &emsp; 2018-2019
+            </p>
+            </center>
+        </div>
+    </footer> 
+    </body>
+</html>
